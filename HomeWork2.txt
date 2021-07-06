@@ -1,19 +1,19 @@
 Home work for GitHub )
 1. На локальном репозитории сделать ветки для:
-- Postman
-- Jmeter
-- CheckLists
-- Bag Reports
-- SQL
-- Charles
-- Mobile testing
+- Postman -- git branch Postman 
+- Jmeter-- git branch Jmeter
+- CheckLists -- git branch CheckLists
+- Bag Reports git branch Bug_Reports
+- SQL -- git branch SQL
+- Charles -- git branch Charles
+- Mobile testing Git branch Mobile_testing
 
-2. Запушить все ветки на внешний репозиторий
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
-4. Запушить структуру багрепорта на внешний репозиторий
-5. Вмержить ветку Bag Reports в Main
-6. Запушить main на внешний репозиторий.
-7. В ветке CheckLists набросать структуру чек листа.
-8. Запушить структуру на внешний репозиторий
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-10. Синхронизировать Внешнюю и Локальную ветки Main
+2. Запушить все ветки на внешний репозиторий ->  git push -u origin Postman (и все остальные также)
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта  -- vim BugReportStructure.txt
+4. Запушить структуру багрепорта на внешний репозиторий-- git add BugReportStructure.txt -> gim commit -m 'text' -> git push
+5. Вмержить ветку Bag Reports в Main --- git switch main -> git merge Bug_Reports 
+6. Запушить main на внешний репозиторий.--- git push -u origin Bug_Reports
+7. В ветке CheckLists набросать структуру чек листа.  git switch CheckLists -> vim CheckListStructure.txt ->  git add heckListStructure.txt -> git commit -m 'CheckList structure'
+8. Запушить структуру на внешний репозиторий-- git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main -- Заходим во внешний репозиторий -> Жмакаем на "8 branches" рядом с главной веткой ->  в графе CheckLists жмакаем 'New pull request'
+10. Синхронизировать Внешнюю и Локальную ветки Main-- git switch main -> git pull
