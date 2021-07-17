@@ -12,7 +12,7 @@ Home work for GitHub )
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта  -- vim BugReportStructure.txt
 4. Запушить структуру багрепорта на внешний репозиторий-- git add BugReportStructure.txt -> gim commit -m 'text' -> git push
 5. Вмержить ветку Bag Reports в Main --- git switch main -> git merge Bug_Reports 
-6. Запушить main на внешний репозиторий.--- git push -u origin main
+6. Запушить main на внешний репозиторий.--- git push -u origin main ( или Bug_Reports?!)
 7. В ветке CheckLists набросать структуру чек листа.  git switch CheckLists -> vim CheckListStructure.txt ->  git add heckListStructure.txt -> git commit -m 'CheckList structure'
 8. Запушить структуру на внешний репозиторий-- git push
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main -- Заходим во внешний репозиторий -> Жмакаем на "8 branches" рядом с главной веткой ->  в графе CheckLists жмакаем 'New pull request'
