@@ -1,4 +1,8 @@
 Ресурс: https://sql-ex.ru/learn_exercises.php
+
+ДА, решений в интернете куча, но какой смысл смотреть в них, если сам не разобрался?
+
+
 Найдите номер модели, скорость и размер жесткого диска для всех ПК стоимостью менее 500 дол. Вывести: model, speed и hd
 SELECT model, speed, hd 
 FROM PC
@@ -35,7 +39,39 @@ SELECT maker, speed
 FROM Laptop JOIN Product ON Product.model = Laptop.model 
 WHERE hd >=10 
 GROUP BY maker, speed
+===========
+
+Задание: 9 (Serge I: 2002-11-02)
+Найдите производителей ПК с процессором не менее 450 Мгц. Вывести: Maker 
+SELECT distinct  maker
+FROM Product  JOIN 
+PC ON PC.model = Product.model
+where speed >= 450
+===========
+Задание: 10 (Serge I: 2002-09-23)
+Найдите модели принтеров, имеющих самую высокую цену. Вывести: model, price 
+SELECT DISTINCT model, price
+FROM printer
+WHERE price = (SELECT max(price) 
+FROM printer)
+===========
+Задание: 11 (Serge I: 2002-11-02)
+Найдите среднюю скорость ПК. 
+Select avg(speed) from PC
 ==========
+адание: 12 (Serge I: 2002-11-02)
+Найдите среднюю скорость ПК-блокнотов, цена которых превышает 1000 дол. 
+Select AVG(speed)
+From Laptop
+WHERE price > 1000
+==========
+Задание: 13 (Serge I: 2002-11-02)
+Найдите среднюю скорость ПК, выпущенных производителем A. 
+SELECT AVG(speed)
+FROM PC
+WHERE model IN(SELECT model
+FROM Product
+WHERE maker = 'A')
 
 ===========
 Задания на написание запросов к БД: 
