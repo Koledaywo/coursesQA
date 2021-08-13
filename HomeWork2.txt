@@ -16,4 +16,4 @@ Home work for GitHub )
 7. В ветке CheckLists набросать структуру чек листа.  git switch CheckLists -> vim CheckListStructure.txt ->  git add heckListStructure.txt -> git commit -m 'CheckList structure'
 8. Запушить структуру на внешний репозиторий-- git push
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main -- Заходим во внешний репозиторий -> Жмакаем на "8 branches" рядом с главной веткой ->  в графе CheckLists жмакаем 'New pull request'
-10. Синхронизировать Внешнюю и Локальную ветки Main-- git switch main -> git pull
+10. Синхронизировать Внешнюю и Локальную ветки Main-- git switch main -> git pull.
